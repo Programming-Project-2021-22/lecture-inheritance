@@ -1,15 +1,16 @@
 class Runner {
 
   public static void main(String[] args) {
-    Vehicle v = new Vehicle();
-    v.setLicensePlate("ABC");
-    System.out.println(v.getLicensePlate());
+    Bicycle b = new MountainBike();
+    b.gear = 6;
+    b.speedUp(40);
+    System.out.println(b);
 
-    Car c = new Car();
-    c.setLicensePlate("DEF");
-    System.out.println(c.getLicensePlate());
-    c.numberOfSeats = 5;
-    System.out.println(c.numberOfSeats);
+    MountainBike mb = new MountainBike();
+    mb.setSeatHeight(30);
+    mb.gear = 2;
+    mb.speedUp(10);
+    System.out.println(mb);
   }
 
 }
