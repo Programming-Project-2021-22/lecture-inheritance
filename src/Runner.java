@@ -1,16 +1,15 @@
 class Runner {
 
   public static void main(String[] args) {
-    Bicycle b = new MountainBike();
-    b.gear = 6;
-    b.speedUp(40);
-    System.out.println(b);
+    InverseString inv1 = new InverseString("Tiago");
+    System.out.println(inv1);
 
-    MountainBike mb = new MountainBike();
-    mb.setSeatHeight(30);
-    mb.gear = 2;
-    mb.speedUp(10);
-    System.out.println(mb);
+    InverseString inv2 = new InverseString("Davi");
+    System.out.println(inv2);
+
+    System.out.println("charAt(2) = " + inv2.charAt(2));
+    System.out.println("length() = " + inv2.length());
+    System.out.println("subSequence(0, 2) = " + inv2.subSequence(0, 2));
   }
 
 }
