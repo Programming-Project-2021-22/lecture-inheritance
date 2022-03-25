@@ -3,7 +3,6 @@ public class Land implements Sortable {
   private int length = 0;
 
   public Land(int width, int length) {
-    super();
     setWidth(width);
     setLength(length);
   }
@@ -25,7 +24,7 @@ public class Land implements Sortable {
   }
 
   public int getArea() {
-    return this.getLength() * this.getWidth();
+    return getLength() * getWidth();
   }
 
   @Override

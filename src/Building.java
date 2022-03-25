@@ -16,7 +16,7 @@ public class Building implements Sortable {
   @Override
   public int isBiggerThan(Sortable obj) {
     Building otherBuilding = (Building) obj;
-    if (this.getHeight() > otherBuilding.getHeight())
+    if (getHeight() > otherBuilding.getHeight())
       return 1;
     else
       return 0;
